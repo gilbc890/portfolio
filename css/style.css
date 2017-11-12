@@ -1,0 +1,41 @@
+/* nav menu */
+header{
+  display: none!important;}
+
+/* first-screen */
+section .first-screen{
+  position: relative;
+  width:100%;
+  height:768px;
+  background-image:url("../img/negative-space-widescreen-monitor-coding-code-css-anita-peeples.jpg");
+  background-size: cover;
+}
+section .first-screen h2,p{
+  text-align: center;
+  color: white;
+}
+section .first-screen h2{
+  font-size:5em;
+  padding-top: 25%;
+}
+section .first-screen p{
+  font-size: 2em;
+}
+
+/* About me */
+section .about h2{
+  text-align: center;
+  padding:5%;
+}
+section .row{
+  width:100%;
+  padding:0 20%;
+  overflow:hidden;
+  text-align: center;
+}
+
+
+/* My projects*/
+section .projects{
+  position: relative;
+}
