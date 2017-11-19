@@ -1,6 +1,4 @@
-html,body{
-  height:100%;
-}
+
 /* Navi */
 header .navi{
   display:none!important;
@@ -174,26 +172,39 @@ section .projects .projects_row{
 
 /* Footer */
 footer{
-
   width:100%;
   background-color:#333;
   margin-top:10%;
 }
-footer .website_skills{
+footer .footer_wrap{
+  position: relative;
+  width:100%;
+  padding:5% 15%;
+  overflow: hidden;
+}
+footer .footer_wrap .website_skills{
   position: relative;
   display: inline-block;
   font-size:1.5em;
-  padding:5% 0 5% 15%;
-  margin-left:15px;
   color:#fff;
+  margin-left:15px;
 }
-footer .personal_info{
+footer .footer_wrap .personal_info{
   position: relative;
   display: inline-block;
   font-size:1.5em;
   text-align:center;
   float:right;
-  padding:5% 15% 5% 0;
-  margin-right:15px;
   color:#fff;
+  margin-right:15px;
+}
+footer .footer_wrap .personal_info>h3{
+  font-size: 1.7em;
+  margin:0 0 10px 0;
+}
+footer .personal_info .social_networks .fa{
+  position: relative;
+  display: inline-block;
+  margin:1%;
+  color: #fff;
 }
