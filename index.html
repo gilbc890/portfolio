@@ -8,38 +8,41 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.min.js">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <title>Web Developer - Byungchan</title>
 </head>
 <body>
-
   <header>
-    <nav class="navi">
+    <nav class="navi hide">
       <div class="navi_wrap">
         <div class="navi_title">
           <!-- Icon -->
           <i class="glyphicon glyphicon-remove"></i>
           <!-- White nav space -->
-          <a href="#">
+          <a href="#contacts">
             <p>Let's Talk</p>
           </a>
         </div>
         <!-- Menu details -->
         <div class="navi_menu">
           <div class="first_navi_menu">
-            <a href="#">
+            <a href="#about">
               <h3>About Me</h3>
               <p>Web Design Skills</p>
             </a>
           </div>
           <div class="second_navi_menu">
-            <a href="#">
+            <a href="#projects">
               <h3>Projects</h3>
               <p>Portfoilo</p>
             </a>
           </div>
           <div class="third_navi_menu">
-            <a href="#">
+            <a href="#contacts">
               <h3>Contacts</h3>
               <p>Keep in Touch</p>
             </a>
@@ -58,7 +61,7 @@
           <!-- Icon -->
           <i class="glyphicon glyphicon-menu-hamburger"></i>
           <!-- White nav space -->
-          <a href="#">
+          <a href="#contacts">
             <p>Let's Talk</p>
           </a>
         </div>
@@ -68,7 +71,7 @@
     </article>
 
     <!-- About me -->
-    <article class="about">
+    <article class="about" id="about">
       <div class="about_wrap">
         <h2>About me</h2>
 
@@ -115,7 +118,7 @@
       </article>
 
       <!-- My Projects -->
-      <article class="projects">
+      <article class="projects" id="projects">
         <h2>My Projects</h2>
         <div class="projects_row">
           <div class="col-xs-6 col-md-4">
@@ -141,7 +144,7 @@
   </section>
 
   <!-- footer -->
-  <footer>
+  <footer id="contacts">
     <div class="footer_wrap">
       <div class="website_skills">
         <p>
