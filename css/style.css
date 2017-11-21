@@ -5,6 +5,7 @@ header .navi{
   width:100%;
   height:100%;
   z-index:10;
+  display:none;
 }
 /* Navi Title */
 header .navi .navi_wrap .navi_title{
@@ -135,7 +136,7 @@ section .about .about_wrap{
 }
 section .about .about_wrap>h2{
   text-align: center;
-  margin:5%;
+  padding:5%;
   font-size: 5em;
   font-weight: 700;
 }
@@ -162,7 +163,7 @@ section .projects{
 }
 section .projects>h2{
   text-align: center;
-  margin:5%;
+  padding:5%;
   font-size: 5em;
   font-weight: 700;
 }
