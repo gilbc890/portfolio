@@ -1,35 +1,50 @@
 $(document).ready(function(){
   $('.glyphicon-menu-hamburger').click(function(){
-    $('.navi').fadeIn(1000)
+    $('.navi').fadeIn('.navi');
   })
   $('.glyphicon-remove').click(function(){
-    $('.navi').fadeOut(1000)
+    $('.navi').css("display", "none");
+  })
+
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 250;
+  var navbarHeight = $('header').outerHeight();
+
+  $(window).scroll(function(event){
+    didScroll = true;
   });
 
-  // Add smooth scrolling to all links
-    $(".navi_button").on('click', function(event) {
+  setInterval(function(){
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+   }, 250);
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+  function hasScrolled() {
+    var st = $(this).scrollTop();
 
-        // Store hash
-        var hash = this.hash;
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta) return;
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+      // Scroll Down
+      $('.navi').css("display","none");
+    } else {
+      // Scroll Up
+      if(st + $(window).height() < $(document).height()) {
+        $('.navi').fadeIn('.navi');
+      }
+    }
+    lastScrollTop = st;
+  }
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 1200, function(){
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
 
-      $('.navi').fadeOut()
-    });
+
+
 
 
 
