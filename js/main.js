@@ -8,8 +8,8 @@ $(document).ready(function(){
 
   var didScroll;
   var lastScrollTop = 0;
-  var delta = 250;
-  var navbarHeight = $('header').outerHeight();
+  var delta = 200;
+  var navbarHeight = $('.navi_wrap').outerHeight();
 
   $(window).scroll(function(event){
     didScroll = true;
@@ -40,7 +40,6 @@ $(document).ready(function(){
     }
     lastScrollTop = st;
   }
-
 
 
 

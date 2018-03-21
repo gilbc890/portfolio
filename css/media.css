@@ -1,0 +1,15 @@
+@media only screen and (min-width:1025px) and (max-width:1250px){
+}
+
+
+
+/*Tablet Portrait size to standard 960*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width:480px) and (max-width:767px){
+  
+}
