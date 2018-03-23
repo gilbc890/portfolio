@@ -1,6 +1,11 @@
 @media only screen and (min-width:1025px) and (max-width:10000px){
+  /* first_screen */
   section .first_screen{
-      height:600px;
+      height:620px;
+  }
+  /* About */
+  section .about .about_wrap>h2{
+    margin-top:-20px;
   }
 
 
@@ -87,7 +92,6 @@
   }
   section .projects .projects_wrap .projects_row{
     overflow:hidden;
-    height:500px;
   }
 
   section .projects .projects_wrap .projects_row .project_box>a>h2{
