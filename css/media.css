@@ -8,10 +8,7 @@
     margin-top:-20px;
   }
 
-
 }
-
-
 
 /*Tablet Portrait size to standard 960*/
 @media only screen and (min-width:768px) and (max-width:1024px){
@@ -207,6 +204,7 @@ footer .footer_wrap .website_skills{
   display: block;
   font-size:1em;
   margin:10%;
+  text-align: center;
 }
 footer .footer_wrap .personal_info{
   display: block;
@@ -214,6 +212,5 @@ footer .footer_wrap .personal_info{
   font-size:1em;
   margin:0  0 10% 0;
 }
-
 
 }
