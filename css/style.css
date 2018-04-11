@@ -172,6 +172,19 @@ section .projects .projects_wrap .projects_row{
   width:80%;
   margin:auto;
 }
+section .projects .projects_wrap .projects_row .thumbnail{
+    height:350px;
+}
+section .projects .projects_wrap .projects_row .thumbnail>h3{
+    text-align: center;
+}
+section .projects .projects_wrap .projects_row .thumbnail>p{
+    padding:0 5%;
+    font-size: 16px;
+}
+section .projects .projects_wrap .projects_row .thumbnail{
+    color:black;
+}
 
 /* Footer */
 footer .footer_wrap{

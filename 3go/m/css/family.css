@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*reset css*/
+*{margin:0; padding:0;border:0;}
+ul,li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+
+
+/*navigation*/
+nav .nav-bar{
+    position:fixed;
+    width:100%;
+    height:40px;
+    background:#150b03;
+    overflow:hidden;
+    display:table;
+    z-index:1000;
+}
+
+nav .nav-bar .nav-wrap{
+    display:table-cell;
+    vertical-align:middle;
+    z-index:1000;
+}
+
+nav .nav-bar .nav-wrap>a>img{
+    display:inline-block;
+    height:30px;
+    margin-left:2%;
+}
+
+nav .nav-bar .nav-wrap .fa-bars{
+    float:right;
+    display:inline-block;
+    margin-right:2%;
+    color:white;
+    overflow:hidden;
+    
+}
+
+/*drawer*/
+/*https://codepen.io/jerome_a_/pen/yoGiv*/
+
+nav ul li a {
+display: block;
+text-decoration: none;
+background: #1f1005;
+padding: 1em;
+margin-bottom: 1px;
+}
+.drawer {
+  -webkit-transform: translate3d(0, -131px, 0);
+  -moz-transform: translate3d(0, -131px, 0);
+  -o-transform: translate3d(0, -131px, 0);
+  transform: translate3d(0, -131px, 0);
+  -webkit-transition:-webkit-transform 0.25s linear;
+  -moz-transition:-moz-transform 0.25s linear;
+  -o-transition:-o-transform 0.25s linear;
+  transition:transform 0.25s linear;
+    z-index:999;
+}
+.drawer.active {
+  -webkit-transform: translate3d(0,129px,0)
+  -moz-transform: translate3d(0,129px,0)
+  -o-transform: translate3d(0,129px,0)
+  transform: translate3d(0,129px,0)
+}
+
+/* Experiment Specific Styles */
+
+.drawer {
+    position:fixed;
+    width:100%;
+	-webkit-transform: translate3d(0, -350px, 0);
+	-moz-transform: translate3d(0, -350px, 0);
+	-o-transform: translate3d(0, -350px, 0);
+	transform: translate3d(0, -350px, 0);
+	-webkit-transition:-webkit-transform 0.25s linear;
+	-moz-transition:-moz-transform 0.25s linear;
+	-o-transition:-o-transform 0.25s linear;
+	transition:transform 0.25s linear;
+}
+.drawer.active {
+	-webkit-transform: translate3d(0,-8px,0);
+	-moz-transform: translate3d(0,-8px,0);
+	-o-transform: translate3d(0,-8px,0);
+	transform: translate3d(0,-8px,0);
+}
+
+nav ul li a {
+display: block;
+text-decoration: none;
+background: #1f1005;
+color: white;
+padding: 1em;
+margin-bottom: 1px;
+}
+
+/*********************accordion menu**********************/
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/** ==========================
+* Conentendor Principal
+=============================
+**/
+.accordion {
+  width: 100%;
+  margin: 3em auto 2em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.accordion__list {
+  background: #150b03;
+  width: 100%;
+}
+.accordion__list .link {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion__list .link {
+    width:93%;
+    left:3%;
+    border-bottom:1px solid #494440;
+}
+
+.accordion__list .link__title {
+  padding: 1.5em;
+  padding-left: 3em;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+}
+.accordion__list .link__title>p{
+    margin-left:-5%;
+}
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+
+/** ========================
+* Diseño iconos font-awesome
+============================= **/
+.accordion li i {
+  position: absolute;
+  top: 1.5em;
+  left: 1rem;
+  font-size: 1em;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 1.2em;
+}
+
+/**===================================
+* Conf. clase link al estar activo submenu (con js)
+====================================**/
+
+.accordion li.open i {
+  color: #ff5252;
+}
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**=======================
+* Submenu
+==========================**/
+.submenu {
+  display: none;
+  background: #1f1005;
+  font-size: 0.95em;
+}
+
+.submenu li {
+  border-bottom: 1px solid #494440;
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  
+  color: #8d8988;
+  padding: 1rem;
+  padding-left: 3.5em;
+  -webkit-transition: all 0.25 ease;
+  -moz-transition: all 0.25 ease;
+  -o-transition: all 0.25 ease;
+  transition: all 0.25 ease;
+
+}
+
+
+/*******************section*************************/
+section{
+    position:relative;
+    width:100%;
+    height:1434px;
+    top:40px;
+    overflow:hidden;
+
+}
+section .title{
+    position:relative;
+    width:60%;
+    text-align:center;
+    margin:30px auto;
+    background:#fff;
+    z-index:1;
+}
+section .title>h2{
+    font-size:30px;
+    font-weight:800;
+}
+
+.top-line{
+    position:relative;
+    width:90%;
+    height:30px;
+    margin:-50px auto;
+    border-top: 2px solid #9f7c7d;
+    border-right: 2px solid #9f7c7d;
+    border-left: 2px solid #9f7c7d;
+}
+
+
+/*************family-box*******************/
+section .family-box{
+    position:absolute;
+    float:left;
+    width:90%;
+    height:1209px;
+    margin-left:5%;
+    margin-top:13%;
+}
+
+/*****************left-box********************/
+section .family-box .left-box{
+    width:50%;
+    height:1209px;
+    margin-left:-3%;
+    display:inline-block;
+    float:left;
+
+}
+section .family-box .left-box .main-box{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+}
+section .family-box .left-box .main-box>img{
+    width:100%;
+    height:300px;
+}
+
+section .family-box .left-box .main-box .main-text{
+    font-size:16px;
+}
+
+/*******************right-box*************/
+section .family-box .right-box{
+    width:50%;
+    height:1209px;
+    margin-right:-3%;
+    display:inline-block;
+    float:right;
+}
+section .family-box .right-box .sub-box{
+    width:100%;
+    height:300px;
+    overflow:hidden;
+}
+section .family-box .right-box .sub-box>img{
+    width:100%;
+    height:200px;
+}
+
+section .family-box .right-box .sub-box .main-text{
+    font-size:16px;
+}
+
+/*******************tab button****************/
+section .tabwrap{
+    position:relative;
+    width:30%;
+    height:40px;
+    margin:1250px auto;
+}
+section .tabwrap .tabLink{
+    position:relative;
+    width:100%;
+    height:40px;
+    background:#9f7c7d;
+    
+}
+section .tabwrap #cont-1{
+    position:relative;
+    width:20%;
+    border-radius:50%;
+    float:left;
+
+}
+section .tabwrap #cont-2{
+    position:relative;
+    width:20%;
+    border-radius:50%;
+    float:left;
+    margin-left:20%;
+ 
+}
+section .tabwrap #cont-3{
+    position:relative;
+    width:20%;
+    border-radius:50%;
+    margin-left:20%;
+    float:left;
+ 
+}
+
+.hide{
+    left:150%;}
+
+
+
+
+
+
+
+
+
+
+
+/********************footer*****************/
+footer{
+    position:relative;
+    width:100%;
+    height:160px;
+}
+
+/*footer accordion*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/** ==========================
+* Conentendor Principal
+=============================
+**/
+footer .accordion {
+  width: 100%;
+  margin:auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+}
+footer .accordion__list {
+  background: #150b03;
+  width: 100%;
+}
+footer .accordion__list .footer-link {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer .accordion__list .footer-link {
+    width:93%;
+    left:3%;
+    border-bottom:1px solid #494440;
+}
+
+footer .accordion__list .link__title {
+  padding: 1.5em;
+  padding-left: 3em;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: #fff;
+}
+footer .accordion__list .link__title>p{
+    margin-left:-5%;
+}
+footer .accordion li:last-child .footer-link {
+  border-bottom: 0;
+}
+
+/** ========================
+* Diseño iconos font-awesome
+============================= **/
+footer .accordion li i {
+  position: absolute;
+  top: 1.5em;
+  left: 1rem;
+  font-size: 1em;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer .accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 1.2em;
+}
+
+/**===================================
+* Conf. clase link al estar activo submenu (con js)
+====================================**/
+
+footer .accordion li.open i {
+  color: #ff5252;
+}
+
+footer .accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**=======================
+* Submenu
+==========================**/
+footer .submenu {
+  display: none;
+  background: #1f1005;
+  font-size: 0.95em;
+}
+
+footer .submenu li {
+  border-bottom: 1px solid #494440;
+}
+
+footer .submenu a {
+  display: block;
+  text-decoration: none;
+  
+  color: #8d8988;
+  padding: 1rem;
+  padding-left: 3.5em;
+  -webkit-transition: all 0.25 ease;
+  -moz-transition: all 0.25 ease;
+  -o-transition: all 0.25 ease;
+  transition: all 0.25 ease;
+}
+/*footer-bar*/
+footer .footer-bar{
+    position:relative;
+    width:100%;
+    height:40px;
+    background:#150b03;
+    overflow:hidden;
+    display:table
+}
+footer .footer-bar .footer-wrap{
+    width:100%;
+    height:40px;
+    display:table-cell;
+    vertical-align:middle;
+    overflow:hidden;
+}
+footer .footer-bar .footer-wrap>a>img{
+    display:inline-block;
+    height:30px;
+    margin-left:2%;
+    vertical-align:middle;
+    
+}
+footer .footer-bar .footer-wrap .sns-box{
+    width:15%;
+    height:30px;
+    float:right;
+    margin-right:2%;
+    display:inline-block;
+}
+footer .footer-bar .footer-wrap .sns-box .fa{
+    color:white;
+    margin-right:2%;
+    margin-top:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

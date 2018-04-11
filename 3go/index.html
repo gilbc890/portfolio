@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/vendor/modernizr.custom.min.js"></script>
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script>
+  var filter = "win16|win32|win64|mac|macintel";
+
+    if(navigator.platform){
+
+       if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+    //alert("mobile");
+          window.location.href = "/m/index.html?bid=m";
+       }
+/*
+       else{
+          //alert("pc");
+          window.location.href = "/";
+       }
+*/
+    }
+
+  </script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/3go_logo.png" alt="" style="width:130px"></a>
+                </li>
+                <li class="nav-text"><a href="cafe.html">CAFE</a></li>
+                <li class="nav-text"><a href="brand.html">BRAND</a></li>
+                <li class="nav-text"><a href="catering.html">CATERING</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="triangle">
+        <div class="text-slide-wrap">
+            <div class="text-slide-content fade" style="display:block;">
+                <h1>3GO BRAND</h1>
+                <p>
+                  쓰리고는 '도전', '청춘'을 지향합니다. 복합문화공간인 쓰리고 카페를 기반으로 소규모 공연들을 진행하고 문화적인 혜택을 더 많은 사람들에게 제공하고자 합니다.
+                  더 많은 사람들에게 커피와 음식을 제공하고 더 나아가 문화혜택을 제공하기 위해 우리는 페스티벌을 기획, 오피스어택 행사 등 끝없는 실험을 하고 있습니다.
+                </p>
+            </div>
+            <div class="text-slide-content fade">
+                <h1>3GO CAFE</h1>
+                <p>
+                  쓰리고는 누구나 문화 예술을 함께 즐길 수 있는 복합문화공간을 지향하고 있습니다.
+                  우리는 모든이들이 꿈을 표현할 수 있도록 독려해주는 장소를 제공하기 위해 노력하고 있습니다.
+                </p>
+            </div>
+            <div class="text-slide-content fade">
+                <h1>3GO CATERING</h1>
+                <p>
+                  이동식 카페와 같은 커피 케이터링 서비스로 바리스타가 직접 내린 핸드드립 커피를 제공합니다
+                  간단한 음식과 커피를 곁들여 여러분의 세미나, 파티, 회의 등의 완성된 이벤트를 경험해보세요.
+                </p>
+            </div>
+        </div>
+        <div class="slideshow-indicator"></div>
+
+
+
+    </div>
+    <div class="slideshow">
+        <div class="slideshow-slides">
+            <a href="./" class="slide" id="slide-1"><img src="./img/main-slide-11.png" alt="" width="1600" height="700"></a>
+            <a href="./" class="slide" id="slide-2"><img src="./img/main-slide-22.png" alt="" width="1600" height="700"></a>
+            <a href="./" class="slide" id="slide-3"><img src="./img/main-slide-33.png" alt="" width="1600" height="700"></a>
+        </div>
+        <div class="slideshow-nav">
+            <a href="#" class="prev">Prev</a>
+            <!--            <a href="#" class="next">Next</a>-->
+        </div>
+    </div>
+
+    <!-- 슬라이드 밑에 겹친 네모 정보창들과 지도  -->
+
+
+    <section>
+        <div id="section-wrap">
+            <div id="first-box">
+                <div id="img-box1">
+                    <img src="img/main-brand.jpg" alt="">
+                </div>
+
+                <div id="text-box1">
+                    <div class="highlight-text">
+                        다양한 문화활동 경험과 활기 <br>넘치는 공간에서 커피를 맛보세요.
+                        <div class="hyperlink">
+                            <a href="cafe.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="second-box">
+                <div id="img-box2">
+                    <img src="img/main-catering.jpg" alt="catering image">
+                </div>
+
+
+                <div id="text-box2">
+                    <div class="highlight-text">
+                      이동식 카페같은 커피 케이터링 <br>서비스는 바리스타가 직접 핸드드립 커피를 제공합니다.
+                        <div class="hyperlink">
+                            <a href="catering.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="map" class="map-scroll">
+        <div class="map-title">
+            <p>LOCATION 3GO</p>
+            <hr>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3820101438187!2d126.91255173093887!3d37.546062630457975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98d5a777ed2d%3A0x5c3ebbd4c01541cd!2z7JOw66as6rOg!5e0!3m2!1sko!2skr!4v1497489182728" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+    <footer>
+        <div id="footerwrap">
+            <div class="footerbox-wrap">
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p><img src="img/3go_logo.png" alt=""></p>
+                    </div>
+                </div>
+
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>찾아오는 길<br><br> 서울 마포구 성지길 51<br>합정동 369-14 cafe 3高</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>영업시간<br><br> 평일 09:00 - 01:00 연중무휴<br> 주말 11:00 - 01:00</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>예약번호<br><br> 02-332-6040
+                            <br>3go@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div id="sns-wrap">
+                        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

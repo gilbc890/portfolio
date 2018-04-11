@@ -1,0 +1,725 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/*reset css*/
+*{margin:0; padding:0;border:0;}
+ul,li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-width: 1440px;
+/*    overflow: hidden;*/
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.wrap{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*nav*/
+
+.nav {
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 2
+}
+
+ul {
+    width: 109%;
+    height: 50px;
+    /*    position: fixed;*/
+}
+
+.nav>ul>li {
+    float: left;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+/*
+.nav>ul>li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3dc6c0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+*/
+
+.nav>ul>li:nth-child(2):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3dc6c0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    top: 20px;
+
+}
+.nav>ul>li:nth-child(3):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3dc6c0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    top: 20px;
+}
+.nav>ul>li:nth-child(4):before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3dc6c0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    top: 20px;
+}
+
+
+.nav>ul>li:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*
+.nav>ul>li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+*/
+
+.nav>ul>li:hover:nth-child(2):before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.nav>ul>li:hover:nth-child(3):before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.nav>ul>li:hover:nth-child(4):before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+.nav-text {
+    margin-left: 50px;
+    margin-top: 24px;
+}
+
+.nav-text:nth-child(3) {
+    left: 45px;
+}
+
+.nav-text:nth-child(4) {
+    left: 90px;
+}
+
+
+/*삼각형*/
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 1600px solid #1c0f04;
+    border-right: 700px solid transparent;
+    position: absolute;
+}
+
+
+
+
+.slideshow {
+    background-color: rgb(0, 0, 0);
+    height: 700px;
+    min-width: 960px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.slideshow-slides {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    /* left は JavaScript で指定 */
+}
+
+.slideshow-slides .slide {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    /* left は JavaScript で指定 */
+}
+
+.slideshow-slides .slide img {
+    left: 50%;
+    margin-left: -800px;
+    position: absolute;
+}
+
+.slideshow-nav a,
+.slideshow-indicator a {
+    background-color: rgba(0, 0, 0, 0);
+    /* for IE9 */
+    overflow: hidden;
+}
+
+.slideshow-nav a:before,
+.slideshow-indicator a:before {
+    content: url(../img/sprites.png);
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.slideshow-nav a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 72px;
+    height: 72px;
+    margin-top: -36px;
+}
+
+.slideshow-nav a.prev {
+    margin-left: -480px;
+}
+
+.slideshow-nav a.prev:before {
+    margin-top: -20px;
+}
+
+.slideshow-nav a.next {
+    margin-left: 408px;
+}
+
+.slideshow-nav a.next:before {
+    margin-left: -80px;
+    margin-top: -20px;
+}
+
+.slideshow-nav a.disabled {
+    display: none;
+}
+
+.slideshow-indicator {
+    bottom: 30px;
+    height: 16px;
+    width: 200px;
+    top: -1100px;
+    left: 100px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.slideshow-indicator a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.slideshow-indicator a.active {
+    cursor: default;
+}
+
+.slideshow-indicator a:before {
+    margin-left: -110px;
+}
+
+.slideshow-indicator a.active:before {
+    margin-left: -130px;
+}
+
+
+/* JavsScript 無効時 */
+
+.no-js .slideshow {
+    height: auto;
+}
+
+.no-js .slideshow-slides {
+    height: auto;
+    position: static;
+}
+
+.no-js .slideshow-slides .slide {
+    display: block;
+    height: auto;
+    position: static;
+}
+
+.no-js .slideshow-slides .slide img {
+    margin: auto;
+    position: static;
+}
+
+.no-js .slideshow-nav,
+.no-js .slideshow-indicator {
+    display: none;
+}
+
+
+/*상단 텍스트 슬라이드*/
+
+.text-slide-wrap {
+    width: 350px;
+    height: 300px;
+    color: white;
+    position: relative;
+    top: -1400px;
+    z-index: 10;
+    left: 60px;
+}
+}.text-slide-wrap {
+    width: 450px;
+    height: 300px;
+    color: white;
+    position: relative;
+    top: -1450px;
+    z-index: 10;
+    left: 60px;
+}
+
+.text-slide-content {
+    animation: ani 1s 1;
+    display: none;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0.2
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+/*슬라이드 밑에 겹친 네모와 정보창들과 지도*/
+
+
+/*section*/
+
+#section-wrap {
+    width: 100%;
+    height: 900px;
+    top: 40px;
+    position: relative;
+    /*    overflow: hidden;*/
+    /*        border: 3px solid red;*/
+    box-sizing: border-box;
+}
+
+
+/*첫번째 상자*/
+
+#first-box {
+    width: 100%;
+    height: 450px;
+    /*    border: 4px solid green;*/
+    box-sizing: border-box;
+}
+
+#img-box1 {
+    width: 40%;
+    height: 400px;
+/*    border: 3px solid black;*/
+/*    background: black;*/
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -10%;
+    opacity: 0;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+#img-box1 > img{
+    width: 100%;
+    height: auto;
+
+}
+
+#text-box1 {
+    border: 3px solid #e5e5e5;
+    width: 30%;
+    height: 100%;
+    float: right;
+    background: #e5e5e5;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+.highlight-text{
+  width:60%;
+  height:30%;
+  text-align: center;
+  margin-top:25%;
+  margin-left:15%;
+  font-size: 1.1rem;
+}
+.hyperlink{
+  background: #af7c7d;
+  width:50%;
+  text-align: center;
+  margin-left: 25%;
+  margin-top:10%;
+  border-radius: 20px;
+  border: 2px solid #af7c7d;
+  color: #fff;
+  transition: all 0.3s;
+}
+.hyperlink:hover{
+  border:2px solid #af7c7d;
+  color:#af7c7d;
+  background:#fff;
+}
+
+#second-box {
+    width: 100%;
+    height: 450px;
+    /*    border: 4px solid yellow;*/
+    box-sizing: border-box;
+}
+
+#text-box2 {
+    width: 30%;
+    height: 80%;
+    border: 4px solid #e5e5e5;
+    background-color: #e5e5e5;
+    margin-left: 20%;
+    margin-top: -6%;
+}
+
+#img-box2 {
+    width: 40%;
+    height: 400px;
+/*    border: 4px solid green;*/
+/*    background-color: green;*/
+    float: right;
+    margin-left: 60%;
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+
+/*지도 관련*/
+
+#map {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10%;
+    margin-bottom: 2px;
+}
+
+#map:after {
+    background: none;
+    content: " ";
+    display: inline-block;
+    font-size: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+#map > .map-title{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin:0 auto;
+/*    background: yellow;*/
+}
+#map> .map-title > hr{
+    width: 30%;;
+    border: 5px solid #af7c7d;
+    left: 35%;
+    position: absolute;
+    top: 18px;
+    z-index: -3;
+
+}
+
+#map>.map-title>p {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/*footer*/
+
+footer{
+    position:relative;
+    width:100%;
+    height:150px;
+    overflow:hidden;
+}
+#footerwrap{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    box-sizing: border-box;
+    background:#1c0f04;
+    display:table;
+}
+.footerbox-wrap{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+.footerbox{
+    position:relative;
+    width:20%;
+    height:70%;
+    float:left;
+    overflow:hidden;
+    text-align:center;
+    box-sizing:border-box;
+    border-right: 1px solid #fff;
+    color: white;
+}
+.footerbox .box-align{
+    position:relative;
+    display:inline-block;
+    width:80%;
+    height:100%;
+
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.footerbox img{
+    width:70%;
+    height:auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+#sns-wrap{
+    position:absolute;
+    width:100%;
+    bottom:50%;
+    margin-bottom:-16px;
+    float:left;
+    box-sizing:border-box;
+}
+.fa{
+    margin-right:5%;
+}
+
+/*
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    color: white;
+}
+
+#footerwrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+}
+
+.footerbox {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+    background: #1c0f04;
+}
+
+.footerbox .box-align {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    top: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footerbox img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+#sns-wrap {
+    position: relative;
+    width: 100%;
+    top: 60%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.fa {
+    padding-right: 5%;
+}
+*/
+
+
+/*-----------------------------------*/
+
+/*
+tab으로 페이지 넘기는 하단 메뉴 부분
+.first-section {
+    position: relative;
+    height: 2600px;
+    min-width: 1600px;
+
+}
+.second-section {
+	position: relative;
+    height: 1600px;
+    min-width: 1600px;
+}
+*/
+
+
+
+
+/*tab*/
+section{
+    height: auto;
+    overflow: hidden;
+    min-width: 1440px;
+}
+.tabwrap{
+    position:relative;
+    min-width:1600px;
+    height:50px;
+/*    float:right (일단 삭제)*/
+    background:#1c0f04;
+    overflow:hidden;
+    z-index: 900;
+}
+.tabwrap>button:nth-child(2){
+    margin:0;
+}
+.tabwrap>button{
+    background:transparent;
+    cursor:pointer;
+    border:0px;
+    padding: 10px;
+}
+.tabwrap .tabLink{
+    position:relative;
+    height:50px;
+    text-align:center;
+    float:right;
+    display:table;
+    margin:0 230px;
+    color:#fff;
+    font-size: 15px;
+}
+.tabwrap> .tabLink:hover {
+    text-decoration: none;
+}
+.tabwrap> .tabLink:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.tabwrap> .tabLink:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #3dc6c0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+/*
+.tabwrap .tabLink:nth-child(2) {
+	width: 178px;
+}
+.tabwrap .tabLink:nth-child(1){
+    width: 73px;
+}
+.tabwrap .tabLink:nth-child(3){
+    width: 57px;
+}
+*/
+/*.tabwrap button.activeLink{background:#555;}*/
+.hide{display:none;}
+/*tab으로 페이지 넘기는 하단 메뉴 부분 종료*/

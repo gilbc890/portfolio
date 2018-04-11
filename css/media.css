@@ -94,6 +94,9 @@
   section .projects .projects_wrap .projects_row .project_box>a>h2{
     font-size: 1.3em;
   }
+  section .projects .projects_wrap .projects_row .thumbnail{
+    height:340px;
+  }
 
   /* Footer */
   footer .footer_wrap .website_skills{
@@ -197,6 +200,12 @@ section .projects .projects_wrap .projects_row .project_box{
 }
 section .projects .projects_wrap .projects_row .project_box>a>h2{
   font-size: 1.5em;
+}
+section .projects .projects_wrap .projects_row .thumbnail{
+    height:auto;
+}
+section .projects .projects_wrap .projects_row .thumbnail>img{
+    width:100%;
 }
 
 /* Footer */

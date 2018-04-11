@@ -1,0 +1,623 @@
+/*케이터링과 카페에 들어갈 헤더 이미지와 텍스트 시작*/
+
+.front-bg {
+   background: url(../img/catering-header-img.png) no-repeat center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.front-bg>h1 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    top: 200px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+.front-bg>p {
+    color: white;
+    width: 60%;
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+/***************************************************/
+
+
+
+/*카페 메뉴 탭*/
+
+.cafe-menu-first {
+    width: 100%;
+    height: 800px;
+    background: white;
+    position: relative;
+}
+
+.title {
+    width: 600px;
+    height: 200px;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-top: 120px;
+    right: 30%;
+    left: 30%;
+}
+
+.title>h2 {
+    font-size: 50pt;
+    font-weight: 500;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.title>h2>.black-color {
+    background-color: black;
+    color: white;
+}
+
+.title>.menu-coffee-icon {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    top: -26%;
+    right: -15%;
+    display: inline-block;
+}
+
+.title>.coffee {
+    margin-left: 40%;
+}
+
+.title>.small-text {
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.menu-wrap {
+    width: 70%;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    display: table;
+}
+
+.menu-wrap>.first-menu-wrap {
+    display: table-cell;
+    line-height: 40px;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    height: 500px;
+    left: 10px;
+}
+
+.menu-wrap>.second-menu-wrap {
+    display: table-cell;
+    line-height: 40px;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+}
+
+.menu-wrap>.third-menu-wrap {
+    display: table-cell;
+    line-height: 40px;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+}
+
+
+/*카페 메뉴 첫번째 탭 끝*/
+
+
+/*카페 메뉴 두번쩨 탭 시작*/
+
+.cafe-menu-second {
+    width: 100%;
+    height: 890px;
+    position: relative;
+    background-image: url(../img/cafe-menu-img.png);
+    background-size: cover;
+}
+
+.cafe-menu-second>.rectangle {
+    width: 80%;
+    height: 700px;
+    border: 3px solid white;
+    position: absolute;
+/*    margin: 0 auto;*/
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.right-side-text {
+    float: left;
+    /*    display: inline-block;*/
+    /*    background-color: red;*/
+    height: 35%;
+    width: 50%;
+    text-align: center;
+    display: table-cell;
+    /*    vertical-align: middle;*/
+    position: relative;
+    top: 35%;
+}
+
+.cafe-menu-second>.rectangle>.right-side-text>p:nth-child(1) {
+    font-size: 70px;
+}
+
+.cafe-menu-second>.rectangle>.right-side-text>p:nth-child(2) {
+    margin-right: 70px;
+}
+
+.cafe-menu-second>.rectangle>.right-side-text>p:nth-child(3) {
+    margin-left: 70px;
+}
+
+.cafe-menu-second>.rectangle>.right-side-text>p:nth-child(2),
+.cafe-menu-second>.rectangle>.right-side-text>p:nth-child(3) {
+    color: black;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.center-side-text {
+    float: left;
+    display: inline-block;
+    height: 350px;
+    width: 15%;
+    margin-top: 110px;
+    margin-right: 80px;
+    margin-left: 60px;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.left-side-text {
+    display: inline-block;
+    height: 550px;
+    width: auto;
+    font-size: 25px;
+    line-height: 65px;
+    margin-top: 110px;
+}
+
+
+/*카페 메뉴 두번째 탭 끝*/
+
+
+/*카페 메뉴 세번째 탭 시작*/
+
+.cafe-menu-third {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    /*    background: lime;*/
+}
+
+.cafe-menu-third>.left-line {
+    position: absolute;
+    background: #af7c7d;
+    width: 26%;
+    height: 3px;
+    margin-top: 10%;
+    ;
+    display: inline-block;
+}
+
+.cafe-menu-third>.drink,
+.cafe-menu-third>.food {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 400;
+    color: #af7c7d;
+    position: absolute;
+}
+
+.cafe-menu-third>.drink {
+    margin-top: 7.5%;
+    margin-left: 28%;
+}
+
+.cafe-menu-third>.food {
+    margin-top: 12.5%;
+    right: 23%
+}
+
+.cafe-menu-third>.right-line {
+    background: #af7c7d;
+    width: 20%;
+    ;
+    height: 3px;
+    margin-top: 15%;
+    float: right;
+    display: inline-block;
+}
+
+.cafe-menu-third>.bottom-menu,
+.cafe-menu-third>.bottom-menu>.bottom-first-menu,
+.cafe-menu-third>.bottom-menu>.bottom-second-menu,
+.cafe-menu-third>.bottom-menu>.bottom-third-menu {
+    display: inline-block;
+}
+
+.cafe-menu-third>.bottom-menu {
+    position: relative;
+    top: 35%;
+    left: 20%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.cafe-menu-third>.bottom-menu>.bottom-first-menu>p:nth-child(1),
+.cafe-menu-third>.bottom-menu>.bottom-second-menu>p:nth-child(1) {
+    color: #af7c7d;
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.cafe-menu-third>.bottom-menu>.bottom-second-menu {
+    margin-left: 100px;
+}
+
+.cafe-menu-third>.bottom-menu>.bottom-third-menu {
+    margin-left: 200px;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 12%;
+    position: relative;
+}
+
+.bottom-line {
+    background: #af7c7d;
+    width: 85%;
+    height: 3px;
+    display: inline-block;
+    /*    position: absolute;*/
+    margin-top: 380px;
+}
+
+.bottom-line-image {
+    position: absolute;
+    width: 320px;
+    height: auto;
+    margin-top: 15%;
+    right: -2%;
+    transform: rotate(-14deg);
+}
+
+
+/*카페 메뉴 세번째 탭 끝*/
+
+
+/*카페 메뉴 탭 끝*/
+
+
+/*케이터링과 카페에 들어갈 헤더 이미지와 텍스트 끝*/
+
+
+/*카페 원두 메뉴 시작*/
+
+
+/*플리핑 테스트 시작*/
+
+.flip-container {
+    /*
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+*/
+    perspective: 1000;
+    float: left;
+    /*    left: 30px;*/
+    position: relative;
+    /*    border: 1px solid #ccc;*/
+    width: 100%;
+    margin-left: 55px;
+
+
+/*    margin: 0 auto;*/
+    /*    min-width: 1280px;*/
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    /*
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+*/
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.front-1,
+.back {
+    width: 310px;
+    height: 627px;
+}
+
+.flipper {
+    /*
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+*/
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.front-1,
+.back {
+    /*
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+*/
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.front {
+    background: url(../img/bean1.PNG) 0 0 no-repeat;
+    z-index: 2;
+}
+
+.front-1 {
+    background: url(../img/bean2.PNG) 0 0 no-repeat;
+    z-index: 2;
+}
+
+.back {
+    /*
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+*/
+    transform: rotateY(180deg);
+    background: #af7c7d;
+}
+
+.front .front-1 .name {
+    /*font-size: 2em;*/
+    /*display: inline-block;*/
+    /*background: rgba(33, 33, 33, 0.9);*/
+    /*color: #f8f8f8;
+        font-family: Courier;
+        padding: 5px 10px;
+        border-radius: 5px;
+        bottom: 60px;
+        left: 25%;*/
+    /*position: absolute;
+        text-shadow: 0.1em 0.1em 0.05em #333;*/
+    /*-webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);*/
+    transform: rotate(-20deg);
+}
+
+.back-logo {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 160px;
+    height: 117px;
+}
+
+.back-title {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back p {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+    font-family: arial;
+    line-height: 2em;
+}
+
+
+/*플립핑 테스트 끗*/
+
+.background {
+    width: 100%;
+    height: auto;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+    min-width: 1440px;
+    /*    border: 1px solid;*/
+    /*    box-shadow: 1px 6px 21px 3px rgba(0, 0, 0, 1);*/
+}
+
+.bean-text {
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    top: 100%;
+    left: 4%;
+}
+
+.bean-text>p:nth-child(1) {
+    font-weight: 900;
+    line-height: 2;
+}
+
+.bean-text>p:nth-child(2) {
+    font-style: italic;
+    width: 300px;
+}
+
+
+
+.bean-wrap-first {
+    width: 1200px;
+    height: 750px;
+/*        background: gray;*/
+    position: relative;
+    margin: 0 auto
+}
+
+.bean-description {
+    display: inline-block;
+    width: 30%;
+    height: 650px;
+    position: relative;
+    /*    background: red;*/
+    margin-left: 2.3%;
+    /*    float: */
+    /*    box-shadow: 0px 4px 9px 3px rgba(0,0,0,1);*/
+}
+
+.bean-description>img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bean-wrap-second {
+    width: 1200px;
+    height: 780px;
+    /*    background: lime;*/
+    /*    opacity: 1;*/
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*커피 메뉴 하단 원두 문의 사항 시작*/
+
+
+.drip-coffee-picture {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.drip-coffee-picture>.beans {
+    width: 50%;
+    position: relative;
+}
+.bottom-last-wrap{
+    position: relative;
+    width: 100%;
+/*    background: brown;*/
+}
+
+.bottom-last-wrap>.bottom-last-text {
+    border-top: 2px solid #af7c7d;
+    width: 45%;
+    left: 30%;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom:1%;
+}
+
+.bottom-last-wrap>.bottom-last-text>p {
+    text-align: center;
+}
+
+.bottom-last-wrap>.bottom-last-text>p:nth-child(1) {
+    position: relative;
+    font-size: 24px;
+    background: #af7c7d;
+    width: 40%;
+    left: 30%;
+    margin-top: -16px;
+}
+
+.bottom-last-wrap>.bottom-last-text>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+ .bottom-last-wrap> .bottom-last-box{
+    position:relative;
+    width:100%;
+    height:127px;
+    background:url(../img/catering.jpeg)center no-repeat;
+    background-size:cover;
+}
+
+.bottom-last-box>.bottom-last-box-left,
+.bottom-last-box>.bottom-last-box-right {
+    display: inline;
+    margin-top: 40px;
+}
+.bottom-last-box>.bottom-last-box-left {
+    float: left;
+    font-size: 20px;
+    background-color: black;
+    opacity: 0.4;
+    color: white;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    left: 20%;
+    position: relative;
+}
+
+.bottom-last-box>.bottom-last-box-left>p {
+    position: relative;
+    line-height: 2.5
+}
+
+.bottom-last-box>.bottom-last-box-right {
+    float: right;
+    font-size: 20px;
+    background-color: white;
+    opacity: 0.4;
+    color: black;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    right: 20%;
+    position: relative;
+}
+
+.bottom-last-box>.bottom-last-box-right>p {
+    position: relative;
+    line-height: 2.5
+}

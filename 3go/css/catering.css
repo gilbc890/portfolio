@@ -1,0 +1,851 @@
+/*케이터링과 카페에 들어갈 헤더 이미지와 텍스트 시작*/
+
+.background {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: relative;
+}
+
+.front-bg {
+    background: url(../img/catering-header-img.png) no-repeat center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.front-bg>h1 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    top: 200px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+.front-bg>p {
+    color: white;
+    width: 60%;
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*케이터링과 카페에 들어갈 헤더 이미지와 텍스트 끝*/
+
+
+/*퍼스트 랩*/
+
+.first-wrap {
+    width: 100%;
+    height: 600px;
+    /*    border: 2px solid black;*/
+    box-sizing: border-box;
+    position: relative;
+}
+
+.first-wrap>.symbol-wrap {
+    width: 1400px;
+    height: 200px;
+    /*    background: yellow;*/
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+    display: table;
+    text-align: center;
+}
+
+.first-wrap>.symbol-wrap>img {
+    width: 85%;
+    height: auto;
+    position: relative;
+}
+
+.catering-text {
+    height: auto;
+    width: 60%;
+    left: 20%;
+    top: 100px;
+    position: relative
+}
+
+.catering-text>.title {
+    text-decoration: underline;
+    height: 10%;
+    width: 90%;
+    margin: 0 auto;
+    /*    background: yellow;*/
+    position: relative;
+}
+
+.catering-text>.catering-description {
+    text-align: center;
+    height: auto;
+    font-size: 19px;
+}
+
+
+/*세컨드 랩*/
+
+.second-wrap {
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+
+.second-wrap>p {
+    color: white;
+    font-size: 140px;
+    display: inline;
+    position: relative;
+    left: 70%;
+    top: -75px;
+}
+
+.second-wrap>img {
+    width: 45%;
+    height: auto;
+    /*    margin-right: 13%;*/
+    position: absolute;
+}
+
+.second-wrap>.first-bus-picture {
+    left: 8%;
+    width: 40%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.second-wrap>.first-bus-picture:hover {
+    z-index: 20;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.second-wrap>.second-bus-picture {
+    right: 8%;
+    margin-top: 5%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.second-wrap>.second-bus-picture:hover {
+    z-index: 20;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.second-wrap>.forth-bus-picture {
+    margin-top: 7%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.second-wrap>.forth-bus-picture:hover {
+    z-index: 20;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+/*third-wrap*/
+
+.third-wrap {
+    top: 60px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.third-wrap>.timberland-video {
+    width: 853px;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 13px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.third-wrap>.video-description {
+    width: 100%;
+    height: 400px;
+    top: -100px;
+    background: #e5e5e5;
+    position: relative;
+    z-index: -3;
+}
+
+.third-wrap>.video-description>p,
+h2 {
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.third-wrap>.video-description>h2 {
+    top: 30%;
+    text-decoration: underline;
+}
+
+.third-wrap>.video-description>p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/*네번째 랩*/
+
+.fourth-wrap-test{
+    top:200px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+/*    background: white;*/
+}
+
+.fourth-wrap-test>.bottom-triangle {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.fourth-wrap-test > .bottom-triangle > .bottom-right-triangle {
+	width: 0;
+    height: 0;
+    left: 0%;
+    border-style: solid;
+    border-width: 600px 0 0 1600px;
+    border-color: transparent transparent transparent rgb(30, 15, 2);
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9
+}
+.fourth-wrap-test > .bottom-triangle > .bottom-left-triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0%;
+    bottom: 200px;
+    border-style: solid;
+    border-width: 0 0 700px 4000px;
+    border-color: transparent transparent rgb(30, 15, 2) transparent;
+    opacity: 0.9;
+    z-index: 10;
+ }
+.fourth-wrap-test > .bottom-left-text{
+    z-index: 15;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    left: 0px;
+    background: rgba(30, 15, 2, 1);
+    top: 300px;
+    text-align: justify;
+    border-right: 3px solid white;
+    
+}
+.fourth-wrap-test > .bottom-left-text > li{
+    position: relative;
+    left: 35%;
+    top: 23px;
+    color: white;
+    line-height: 30px;
+    }
+.fourth-wrap-test > .bottom-left-text > li:nth-child(1){
+    font-size: 25px;
+}
+.fourth-wrap-test > .bottom-left-text > li:nth-child(1)>img{
+    width: 30px;
+    display: inline-block;
+    top: 3px;
+    position: relative;
+}
+.fourth-wrap-test > .bottom-left-text > li:nth-child(2){
+    font-size: 25px;
+}
+.fourth-wrap-test > .bottom-left-text > li:nth-child(3){
+    margin-top: 20px;
+}
+.fourth-wrap-test > .bottom-left-text > li:nth-child(2) > img{
+    width: 30px;
+    display: inline-block;
+    top: 4px;
+    position: relative;
+}
+.fourth-wrap-test > .bottom-left-text > li:nth-child(3),
+.fourth-wrap-test > .bottom-left-text > li:nth-child(4),
+.fourth-wrap-test > .bottom-left-text > li:nth-child(5){
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fourth-wrap-test > #bottom-middle-text{
+	position: absolute;
+    width: 370px;
+    height: 200px;
+/*    background: yellow;*/
+    z-index: 4;
+    font-size: 23px;
+    color: white;
+    top: 320px;
+    line-height: 50px;
+}
+.fourth-wrap-test > .bottom-right-img{
+    width: 32%;
+    height: auto;
+    position: absolute;
+    bottom: 240px;
+    z-index: 100;
+    right: 40px;
+}
+.fourth-wrap-test > .bottom-right-text{
+    font-size: 55px;
+    right: 80px;
+    top: 79px;
+    z-index: 500;
+    position: absolute;
+    color: white;
+    font-weight: 700;
+}
+/*바텀 삼각형 테스트 끝*/
+
+
+/*바텀 부분에 들어가는 텍스트*/
+
+/*
+.fourth-wrap-test >.bottom-left-text {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    width: 700px;
+    text-align: center;
+    top: 240px;
+    left: 800px;
+    font-size: 40px;
+}
+.fourth-wrap-test > .
+*/
+
+
+/*바텀 왼쪽에 들어가는 텍스트*/
+
+/*
+.fourth-wrap>.background>.bottom-left-text {
+    	background: red;
+    display: inline-block;
+    position: absolute;
+    text-align: justify;
+    top: 60%;
+    left: 10%;
+    width: 20%;
+    height: 180px;
+    z-index: 10;
+}
+*/
+
+/*
+.fourth-wrap>.background>ul>li>img {
+    width: 20px;
+    height: 20px;
+}
+
+.fourth-wrap>.background>ul>li {
+    color: white;
+    line-height: 2em;
+}
+
+.fourth-wrap>.background>ul>li:nth-child(5) {
+    float: left;
+}
+
+.fourth-wrap>.background>ul>li:nth-child(6) {
+    background: white;
+    width: 2px;
+    height: 180px;
+    margin-left: 70%;
+    margin-top: -45%;
+}
+
+.fourth-wrap>.background>.hide-box {
+    width: 400px;
+    height: 280px;
+    background: rgb(30, 15, 2);
+    position: absolute;
+    top: 62.5%;
+    z-index: 8;
+    left: 4%;
+}
+
+#bottom-middle-text {
+    position: absolute;
+    top: 62.5%;
+    left: 5%;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    display: block;
+    line-height: 2;
+    z-index: 1;
+}
+
+.fourth-wrap>.background>#bottom-img {
+    width: 32%;
+    height: auto;
+    position: absolute;
+    top: 310px;
+    right: 10%;
+    opacity: 1;
+}
+*/
+
+
+/*케이터링 - 갤러리 탭 시작*/
+
+
+/*케이터링 - 갤러리 - 첫번째 - 탭 - 시작 */
+
+#cont-2-1>.first-gallery-wrap {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /*    background: gray;*/
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-circle {
+    width: 720px;
+    height: 720px;
+    position: absolute;
+    border-radius: 100%;
+    background: #af7c7d;
+    left: -90px;
+    top: -120px;
+    /*    z-index: -1*/
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 60px;
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text>.gallery-video {
+    position: relative;
+    top: 100px;
+    display: inline;
+    margin-right: 30px;
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text>.gallery-text {
+    width: 400px;
+    height: 150px;
+    /*    background: white;*/
+    display: inline-block;
+    top: 70px;
+    position: relative;
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text>.gallery-text>img {
+    width: 90px;
+    display: inline;
+    vertical-align: top
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text>.gallery-text>.gallery-text-title {
+    font-size: 70px;
+    font-weight: 600;
+    display: inline;
+}
+
+#cont-2-1>.first-gallery-wrap>.gallery-video-text>.gallery-text:nth-child(2) {
+    font-size: 20px;
+}
+
+
+/*케이터링 - 갤러리 - 첫번째 - 탭 끝 */
+
+
+/*케이터링 - 갤러리 - 두번째 - 탭 시작 */
+
+#cont-2-1>.second-gallery-wrap {
+    width: 100%;
+    height: 600px;
+    /*    margin: 0 auto;*/
+    text-align: center;
+}
+
+#cont-2-1>.second-gallery-wrap>.gallery-left-video {
+    display: inline-block;
+    width: 640px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+#cont-2-1>.second-gallery-wrap>.gallery-right-video {
+    display: inline-block;
+    width: 640px;
+    height: 500px;
+    margin-left: 20px;
+}
+
+.gallery-second-title {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 30px;
+}
+
+.gallery-second-contents {
+    position: relative;
+    margin-top: 15px;
+}
+
+.gallery-second-text-content {
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+
+/*케이터링 - 갤러리 - 두번째 - 탭 끝 */
+
+
+/*케이터링 - 갤러리 - 세번째 - 탭 시작 */
+
+.third-gallery-wrap {
+    width: 100%;
+    height: 1400px;
+    position: relative;
+}
+
+.third-gallery-wrap>.third-gallery-wrap-text {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.third-gallery-wrap>.third-gallery-wrap-text >.third-gallery-wrap-text-title{
+    width: 100%;
+    height: 100px;
+}
+
+.third-gallery-wrap>.third-gallery-wrap-text>.third-gallery-wrap-text-title >hr {
+    width: 200px;
+    border: 4px solid #af7c7d;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    z-index: -1;
+}
+
+.third-gallery-wrap>.third-gallery-wrap-text>.third-gallery-wrap-text-title>h1 {
+    font-size: 55px;
+    /*    text-decoration-line: line-through;*/
+    margin: 0px;
+    display: inline-block;
+}
+
+.third-gallery-wrap>.third-gallery-wrap-text>p {
+    font-size: 20px;
+    height: 50px;
+}
+
+.third-gallery-wrap>.third-gallery-wrap-circle {
+    width: 1400px;
+    height: 1400px;
+    background: #af7c7d;
+    border-radius: 100%;
+    position: absolute;
+    top: 220px;
+    right: -35%;
+    display: inline-block;
+}
+
+.third-gallery-wrap>.third-gallery-photo-first {
+    width: 75%;
+    height: 300px;
+    margin: auto;
+/*    background: gray;*/
+    position: relative;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap{
+    width: 100%;
+    height: 100%;
+/*    background: lime;*/
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(1){
+    width: 18%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right: 8%;
+    margin-left: 1
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(2){
+    width: 22%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right:8%;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(2) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(3){
+    width: 18%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right:8%;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(3) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(4){
+    width: 18%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+/*    margin-right:%;*/
+}
+.third-gallery-wrap>.third-gallery-photo-first > .third-gallery-photo-first-wrap >div:nth-child(4) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*갤러리 두번째 랩 시작*/
+.third-gallery-wrap>.third-gallery-photo-second {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+/*    background: gray;*/
+    position: relative;
+    margin-top: 10px;
+}
+
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap{
+    width: 100%;
+    height: 100%;
+/*    background: lime;*/
+    position: relative;
+    text-align: center;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(1){
+    width:28%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right: 1%;
+/*    margin-left: %;*/
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(2){
+    width: 25%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-left:1%;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(2)>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(3){
+    width: 28%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-left:1.5%;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(3)>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(4){
+    width: 14%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-left:1.5%;
+}
+.third-gallery-wrap>.third-gallery-photo-second > .third-gallery-photo-second-wrap >div:nth-child(4)>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*갤러리 두번째 랩 끝*/
+
+
+/*갤러리 세번째 랩 시작*/
+.third-gallery-wrap>.third-gallery-photo-third {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+/*    background: gray;*/
+    position: relative;
+    margin-top: 10px;
+}
+
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap{
+    width: 100%;
+    height: 100%;
+/*    background: lime;*/
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(1){
+    width: 27%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right: 4%;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(2){
+    width: 27%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right:5%;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(2) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(3){
+    width: 17%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-right :4%;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(3) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(4){
+    width: 16%;
+    height: 100%;
+/*    background: gray;*/
+    float: left;
+    margin-left:0%;
+}
+.third-gallery-wrap>.third-gallery-photo-third > .third-gallery-photo-third-wrap >div:nth-child(4) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*갤러리 세번째 랩 끝*/
+
+
+/*갤러리 네번째 랩 시작*/
+
+.third-gallery-wrap>.third-gallery-photo-forth {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+/*    background: gray;*/
+    position: relative;
+    margin-top: 20px;
+}
+
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap{
+    width: 100%;
+    height: 100%;
+/*    background: lime;*/
+    position: relative;
+    text-align: center;
+/*    padding: 5px;*/
+    box-sizing: border-box;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(1){
+    width: 24%;
+    height: 80%;
+/*    background: gray;*/
+    float: left;
+    margin-right: 2%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(1) > img{
+    width: 100%;
+    height: auto;
+    margin-top: 8%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(2){
+    width: 25%;
+    height: 80%;
+/*    background: gray;*/
+    float: left;
+    margin-right:2%;
+    margin-left: 1%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(2) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 10%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(3){
+    width: 25%;
+    height: 100%;
+    background: gray;
+    float: left;
+    margin-left:2%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(3) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(4){
+    width: 16%;
+    height: 100%;
+    background: gray;
+    float: left;
+    margin-left:3%;
+}
+.third-gallery-wrap>.third-gallery-photo-forth > .third-gallery-photo-forth-wrap >div:nth-child(4) > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*갤러리 네번째 랩 끝*/
+
+/*케이터링 - 갤러리 - 세번째 - 탭 끝 */
+

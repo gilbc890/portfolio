@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>B R A n D</title>
+    <meta name="keyword" content="your keyword">
+    <meta name="description" content="your description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <link rel="stylesheet" href="css/brand.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="js/brand.js"></script>
+    <link rel="stylesheet" href="js/brand.js">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/3go_logo.png" alt="" style="width:130px"></a>
+                </li>
+                <li class="nav-text"><a href="cafe.html">CAFE</a></li>
+                <li class="nav-text"><a href="brand.html">BRAND</a></li>
+                <li class="nav-text"><a href="catering.html">CATERING</a></li>
+            </ul>
+        </div>
+        <div class="triangle">
+            <div class="text-slide-wrap">
+                <div class="text-slide-content fade" style="display:block;">
+                    <h1>3고 패밀리</h1>
+                    <p>언제가 되었든 사람들에게 있어서 도전이란 환경적인 제약이 따르기 마련입니다. 그렇지만 그것을 행하는 사람들이 우리 쓰리고 패밀리입니다.</p>
+                </div>
+                <div class="text-slide-content fade">
+                    <h1>3고 페스티벌</h1>
+                    <p>우리는 3고 페스티벌이 예술가들이 사람들의 생각을 발전시키고 연구하고 고민하는데 도움이 되어주길 바라고 더 나아가 함께 예술을 즐기고자 합니다. 우리의 페스티벌이 문화를 담는 페스티벌이 되길 바랍니다.</p>
+                </div>
+                <div class="text-slide-content fade">
+                    <h1>3고 패션</h1>
+                    <p>쓰리고 패션은 카페 고객들의 라이프 스타일과 취향을 대변하면서 우리 쓰리고의 생각과 이야기까지 담아낼 수 있는 매개체의 역할이 우리 쓰리고 패션의 목적입니다.</p>
+                </div>
+            </div>
+            <div class="slideshow-indicator"></div>
+
+
+
+        </div>
+        <div class="slideshow">
+            <div class="slideshow-slides">
+                <a href="./" class="slide" id="slide-1"><img src="./img/slide-1.jpg" alt="" width="1600" height="700"></a>
+                <a href="./" class="slide" id="slide-2"><img src="./img/slide-2.jpg" alt="" width="1600" height="700"></a>
+                <a href="./" class="slide" id="slide-3"><img src="./img/slide-3.jpg" alt="" width="1600" height="700"></a>
+            </div>
+            <div class="slideshow-nav">
+                <a href="#" class="prev">Prev</a>
+                <!--            <a href="#" class="next">Next</a>-->
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section>
+
+        <!--    tab   -->
+        <div class="tabwrap">
+            <button class="tabLink" onclick="tab(event, 'fashion');">FASHION</button>
+
+            <button class="tabLink" onclick="tab(event, 'festival');">FESTIVAL</button>
+
+            <button class="tabLink" onclick="tab(event, 'family');" id="defaultOpen">FAMILY</button>
+
+        </div>
+
+
+
+
+        <!-- family tab  -->
+
+
+        <div id="family" class="tabcontent">
+            <div class="title">
+                <p>FAMILY</p>
+            </div>
+            <div class="family-video">
+             <iframe width="853" height="480" src="https://www.youtube.com/embed/m86ae_e_ptU?rel=0" frameborder="0" allowfullscreen class="family-video-first"></iframe>
+           </div>
+            <div class="wrap">
+                <div id="main-img-wrap">
+                    <div id="main-img">
+                        <img src="img/family-front.jpg" alt="" class="front-img">
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <div id="sub-img-wrap">
+
+                    <div class="first-sub-wrap">
+
+                        <div class="family-gallery">
+                            <img src="img/family-1.jpg" alt="">
+                        </div>
+
+                        <div class="family-gallery">
+                            <img src="img/family-2.jpg" alt="">
+                        </div>
+
+                        <div class="family-gallery">
+                            <img src="img/family-3.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-4.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-5.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-6.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-7.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="second-sub-wrap">
+                        <div class="family-gallery">
+                            <img src="img/family-8.jpg" alt="">
+                        </div>
+
+                        <div class="family-gallery">
+                            <img src="img/family-9.jpg" alt="">
+                        </div>
+
+                        <div class="family-gallery">
+                            <img src="img/family-10jpg.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-11.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-12.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-13.jpg" alt="">
+                        </div>
+                        <div class="family-gallery">
+                            <img src="img/family-14.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--festival tab      -->
+
+        <div id="festival" class="tabcontent">
+            <div id="title2">
+                <p>FESTIVAL</p>
+            </div>
+
+            <div class="festival-video">
+             <iframe width="853" height="480" src="https://www.youtube.com/embed/4UmBEq-VM5U" frameborder="0" allowfullscreen class="festival-video-first"></iframe>
+           </div>
+
+            <div class="video-description">
+                <p>
+                  ​청춘을 상징하는 ​홍대문화의 ​주류로 ​새롭게 ​주목받고 있는 합정동의 ​쓰리고가 청춘의 <br>열망을 모아 페스티벌을 열었습니다.​
+                  친해지고 소통하고, 나누고 기부하는 쓰리고카페 페스티벌 '청춘페스티벌'
+                </p>
+            </div>
+
+            <div class="poster">
+                <div class="poster-text">
+                    <h1>PO ST ER</h1>
+                </div>
+                <div class="first-poster">
+                    <img src="img/festival-1.jpeg" alt="첫번째 사진" class="first-poster-jpg">
+                    <img src="img/festival-2.jpeg" alt="두번째 사진" class="first-poster-jpg" alt="" class="first-poster-jpg">
+                    <img src="img/festival-3.png" alt="세번째 사진" class="first-poster-jpg" alt="" class="first-poster-jpg">
+                    <img src="img/festival-4.jpeg" alt="네번째 사진" class="first-poster-jpg" alt="" class="first-poster-jpg">
+                    <img src="img/festival-5.jpeg" alt="다섯번째 사진" class="first-poster-jpg" alt="" class="first-poster-jpg">
+                </div>
+                <div class="second-poster">
+                    <img src="img/festival-6.jpeg" alt="여섯번째 사진" class="second-poster-jpg">
+                    <img src="img/festival-7.jpeg" alt="일곱번째 사진" class="second-poster-jpg">
+                    <img src="img/festival-9.jpeg" alt="여덟번째 사진" class="second-poster-jpg">
+                    <img src="img/festival-10.jpeg" alt="아홉번째 사진" class="second-poster-jpg">
+                    <img src="img/festival-11.jpeg" alt="열번째 사진" class="second-poster-jpg">
+                </div>
+                <div class="more-button"><a href="">포스터 더 보러가기</a></div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- fashion tab-->
+
+
+        <div id="fashion" class="tabcontent">
+            <div class="title">
+                <p>FASHION</p>
+            </div>
+            <div class="fashion-wrap">
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-bag-1.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 에코백 패키지</p>
+                        <p>50.</p>
+                        <p>착한 재질, 착한 가격. 따로 구매 가능합니다.</p>
+                    </div>
+                </div>
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-bag-2.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 화이트 에코백</p>
+                        <p>2.9</p>
+                        <p>
+                          사진으로 촉감을 전달 못하는게 아쉽네요.
+                        </p>
+                    </div>
+                </div>
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-bag-3.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 얼룩 에코백</p>
+                        <p>2.9</p>
+                        <p>
+                          완전 사고 싶게 만드는 무늬.
+                        </p>
+                    </div>
+                </div>
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-cap-1.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 캡모자</p>
+                        <p>2.0</p>
+                        <p>캡모자 조절되는 디테일 인정.</p>
+                    </div>
+                </div>
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-cap-2.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 비니</p>
+                        <p>2.0</p>
+                        <p>가게에 들려서 구경해보세요.</p>
+                    </div>
+                </div>
+                <div class="fashion-common">
+                    <div class="fashion-common-photo">
+                        <img src="img/fahion-tshirt.png" alt="">
+                    </div>
+                    <div class="fashion-text">
+                        <p>3고 티셔츠</p>
+                        <p>2.5</p>
+                        <p>
+                          디테일 좋은 원단이라 세탁해도 늘어나지 않을 거에요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <div id="footerwrap">
+            <div class="footerbox-wrap">
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p><img src="img/3go_logo.png" alt=""></p>
+                    </div>
+                </div>
+
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>찾아오는 길<br><br> 서울 마포구 성지길 51<br>합정동 369-14 cafe 3高</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>영업시간<br><br> 평일 09:00 - 01:00 연중무휴<br> 주말 11:00 - 01:00</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div class="box-align">
+                        <p>예약번호<br><br> 02-332-6040
+                            <br>3go@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footerbox">
+                    <div id="sns-wrap">
+                        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        function tab(evt, pageName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+
+
+
+
+
+
+
+
+
+        $(document).ready(function() {
+
+
+            $("#main-img").stick_in_parent({
+                offset_top: 50
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>
