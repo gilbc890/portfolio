@@ -1,0 +1,339 @@
+@media only screen and (min-width:1025px) and (max-width:10000px){
+}
+/*Tablet Portrait size to standard 960*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+  /* Nav  */
+.navbar-right{
+  margin-top:10px;
+}
+.navbar-right>li{
+    font-size: 1.3em;
+}
+.home_wrap .home_text{
+  margin:15% auto 10%;
+}
+/* About */
+/* Logo Box */
+.about_text{
+  position: relative;
+  width:50%;
+  font-size: 2em;
+}
+.about_text>p{
+  display: block;
+  font-weight: 700;
+  opacity:0;
+  visibility: hidden;
+  transition: 0.5s linear
+}
+/* About_second */
+.about_second{
+  position: relative;
+  margin-top:10%;
+  font-size: 2em;
+  font-family:"NanumSquare";
+}
+.about_second_text>i{
+  font-weight: 600;
+}
+.about_second .about_pic>img{
+  width:100%;
+}
+/* After Hover Text Effect */
+.gallery_text_box{
+  position: relative;
+  width:100%;
+  display:none;
+}
+.gallery_text{
+  position: absolute;
+  width:100%;
+  height:125px;
+  font-size:1.3em;
+  margin-top:-80%;
+}
+.gallery_text>p:nth-child(1){
+  margin-top:45px;
+}
+.first_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.third_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.fourth_photo>.gallery_text_box>.gallery_text>p{
+  margin-top:13px;
+}
+
+/* Menu Details */
+.cafe-menu-detail {
+    height: 800px;
+}
+
+.cafe-menu-detail>.rectangle {
+    height: 650px;
+}
+.right-side-text {
+    width: 45%;
+}
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(1) {
+    font-size: 3em;
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(2),
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(3) {
+    font-size: 2.5em;
+}
+.center-side-text {
+    font-size: 1.3em;
+    margin-top: 35px;
+
+}
+.left-side-text {
+    font-size: 1.3em;
+    margin-top: 35px;
+}
+/* Products */
+/* Carousel */
+.carousel{
+  width:70%;
+}
+/* Catering */
+.catering_wrap>h3{
+  font-size: 1.5em;
+}
+/* Symbol */
+/* Symbol Text */
+.symbol_title{
+  font-size: 1.5em;
+}
+.symbol_text{
+  font-size: 1.3em;
+}
+
+/* Festival */
+.festival_text{
+  margin-top:5%;
+}
+.festival_wrap .festival_text>h3{
+  font-size:1.7em;
+}
+.festival_wrap .festival_text>p{
+  font-size:1.5em;
+}
+.festival_clip>iframe{
+  width:100%;
+}
+
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width:375px) and (max-width:767px){
+  /* Navi */
+.navbar{
+  display:none;
+}
+/* Header Article_Main-Logo */
+.home_wrap .home_text{
+  width:80%;
+  margin:15% auto 15%;
+}
+.home_wrap .home_text>p{
+  font-size: 2em;
+  padding:5%;
+}
+.home_wrap .home_text>img{
+  margin:5% auto;
+  padding:0;
+}
+/* About */
+.about_wrap{
+  width:100%;
+}
+.logo_box{
+  left:50%;
+  margin-left:-125px;
+}
+.about_text{
+  width:100%;
+  font-size: 1.4em;
+  margin:15px auto;
+}
+#text_effect{
+  display:block;
+  padding:10px 0;
+}
+/* About_second */
+.about_second{
+  font-size: 1.4em;
+}
+.about_second_text{
+  text-align:center;
+}
+/* Menu */
+.menu_wrap{
+  background-image: url(../img/menu_bg_photo.png);
+}
+.menu_wrap>h1{
+  font-size: 3em;
+}
+/* Gallery */
+.gallery{
+  width:80%;
+  margin:auto;
+}
+.gallery_photo{
+  padding:15px;
+}
+.third_photo{
+  padding-bottom:0;
+}
+/* After Hover Text Effect */
+.gallery_text_box{
+  position: relative;
+  width:100%;
+  display:none;
+}
+.gallery_text{
+  margin-top:-75%;
+}
+/* Menu Button */
+.menu_view_button{
+  position: relative;
+  padding:5%;
+  text-align: center;
+}
+/* Menu Details */
+.cafe-menu-detail {
+    width: 100%;
+    height: 400px;
+}
+
+.cafe-menu-detail>.rectangle {
+    height: 330px;
+}
+.right-side-text{
+  width:35%;
+}
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(1) {
+    font-size: 1.3em;
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(2),
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(3) {
+    color: black;
+    font-size: 1em;
+}
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(4){
+  font-family: "NanumSquare";
+  font-size:0.5em;
+}
+
+.center-side-text {
+    float: left;
+    display: inline-block;
+    height: 300px;
+    width: 15%;
+    margin-top: 35px;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-family:"NanumSquare";
+    font-size: 0.8em;
+    line-height: 35px;
+}
+
+.left-side-text {
+    display: inline-block;
+    height: 300px;
+    width: auto;
+    font-size: 0.8em;
+    font-family: "NanumSquare";
+    line-height: 30px;
+    margin-top: 10px;
+}
+/* Products */
+.products_wrap>h1{
+  font-size: 3em;
+}
+/* Carousel */
+.carousel{
+  width:80%;
+  margin:auto;
+}
+/* Products text */
+.info_text{
+  margin:5px;
+  font-size:0.8em;
+  text-align: right;
+  font-family:"NanumSquare";
+}
+/* Catering */
+.catering_wrap>h1{
+  font-size: 3em;
+}
+.catering_wrap>h3{
+  font-size: 1.5em;
+}
+/* Symbol */
+.catering_symbol .pour-over{
+  width:80%;
+  margin:auto;
+}
+.catering_symbol .desserts{
+  width:80%;
+  margin:auto;
+}
+.catering_symbol .perfomance{
+  width:80%;
+  margin:auto;
+}
+.symbol_img{
+  margin:40px auto;
+}
+/* Symbol Text */
+.symbol_title{
+  margin-top: 60px;
+}
+/* Festival */
+.festival_wrap>h1{
+  font-size: 3em;
+}
+.festival_intro{
+  margin:auto;
+}
+.festival_wrap .festival_text>h3{
+  font-size:1.5em;
+  padding:0;
+}
+.festival_wrap .festival_text>p{
+  font-size:1em;
+  padding:0;
+}
+.festival_clip>iframe{
+  width:100%;
+}
+.poster_button{
+  padding-top:20px;
+}
+/* More Posters */
+.first_post>div{
+  padding:10px;
+}
+.second_post>div{
+  padding:10px;
+}
+/* Footer */
+footer{
+  padding-top:40px;
+}
+.footer_img>.col-sm-3{
+  width:50%;
+  display: inline-block;
+  padding:0;
+  float:left;
+}
+.footer_img>.col-sm-3>img{
+  width:100%;
+}
+}

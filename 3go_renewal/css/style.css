@@ -1,0 +1,435 @@
+html,body{
+  width:100%;
+  height:100%;
+  font-family: 'NanumSquare', 'Open Sans', sans-serif;
+}
+header{
+  width:100%;
+  height:100%;
+  background-image:url("../img/header-photo.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Navi */
+.navbar{
+  background:none;
+  padding-top:20px;
+}
+.navbar-inverse{
+  border:none;
+}
+.active>a{
+  background-color: inherit!important;
+}
+/* Navbar Logo */
+.navbar-header{
+  padding-left: 5%;
+}
+.navbar-brand{
+  width:75%;
+  height:auto;
+  overflow: hidden;
+}
+.navbar-brand>img{
+  width:100%;
+}
+/* Navbar Right */
+.navbar-right{
+  padding-right:5%;
+  height:auto;
+  font-family:"Open Sans";
+}
+.navbar-right>li{
+  font-size: 1.5em;
+}
+.navbar-right>li>a{
+  color:#fff;
+}
+
+/* Header Article_Main-Logo */
+.home_wrap{
+  width:100%;
+  overflow: hidden;
+}
+.home_wrap .home_text{
+  display:block;
+  width:80%;
+  margin:10% auto 10%;
+  text-align: center;
+  font-family:"Open Sans";
+}
+.home_wrap .home_text>p{
+  font-size: 3em;
+  color: #fff;
+  padding:1%;
+}
+.home_wrap .home_text>img{
+  font-size: 3em;
+  color: #fff;
+  padding:1%;
+}
+/* Section */
+/* About */
+.about_wrap{
+  width:80%;
+  margin:10% auto;
+}
+.about{
+  overflow: hidden;
+}
+#about>h1{
+  visibility: hidden;
+}
+/* Logo Box */
+.logo_box{
+  position: relative;
+  display:inline-block;
+  width:250px;
+  height:250px;
+  border:5px solid #5F5F5F;
+}
+.logo_box .logo_box_img{
+  position: relative;
+  margin:15%;
+  text-align: center;
+}
+.logo_box>p{
+  font-size:2em;
+  text-align: center;
+  font-weight:400;
+  font-family: "Open Sans";
+}
+.about_text{
+  position: relative;
+  width:70%;
+  font-size: 2.5em;
+  font-family: "NanumSquare";
+  text-align: center;
+  margin-top: 10%;
+}
+.about_text>p{
+  display: inline-block;
+  font-weight: 700;
+  opacity:0;
+  visibility: hidden;
+  transition: 0.5s linear
+}
+/* About_second */
+.about_second{
+  position: relative;
+  margin-top:10%;
+  font-size: 2.5em;
+  font-family:"NanumSquare";
+}
+.about_second_text>i{
+  font-weight: 600;
+}
+.about_second .about_pic>img{
+  width:100%;
+}
+/* Menu */
+.menu_wrap{
+  background-image: url(../img/menu_bg_photo.png);
+}
+.menu_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  color: #fff;
+  font-weight:300;
+  font-family: "Open Sans";
+}
+.menu_wrap>hr{
+  width:10%;
+  border:2px solid #fff;
+}
+/* Gallery */
+.gallery{
+  padding-top:20px;
+}
+/* After Hover Text Effect */
+.gallery_text_box{
+  position: relative;
+  width:100%;
+  display:none;
+}
+.gallery_text{
+  position: absolute;
+  width:100%;
+  height:130px;
+  font-size:1.5em;
+  color: #EE4A56;
+  background-color: #fff;
+  opacity: 0.8;
+  text-align: center;
+  margin-top:-65%;
+  font-family: "NanumSquare";
+}
+.gallery_text>p:nth-child(1){
+  margin-top:50px;
+}
+.first_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.third_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.fourth_photo>.gallery_text_box>.gallery_text>p{
+  margin-top:10px;
+}
+
+/* First Line */
+.first_line{
+  position: relative;
+  width:80%;
+  margin:auto;
+  padding-bottom:15px;
+  overflow: hidden;
+}
+.gallery_photo>img{
+  position: relative;
+  width:100%
+}
+/* Second Line */
+.second_line{
+  position: relative;
+  width:80%;
+  margin:auto;
+}
+/* Menu Button */
+.menu_view_button{
+  position: relative;
+  padding:5%;
+  text-align: center;
+}
+/* Menu Details */
+.cafe-menu-detail {
+    width: 100%;
+    height: 890px;
+    position: relative;
+    background-image: url(../img/cafe-menu-img.png);
+    background-size: cover;
+    display: none;
+}
+
+.cafe-menu-detail>.rectangle {
+    width: 80%;
+    height: 700px;
+    border: 3px solid white;
+    position: absolute;
+/*    margin: 0 auto;*/
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.right-side-text {
+    float: left;
+    /*    display: inline-block;*/
+    /*    background-color: red;*/
+    height: 35%;
+    width: 50%;
+    text-align: center;
+    display: table-cell;
+    /*    vertical-align: middle;*/
+    position: relative;
+    top: 30%;
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(1) {
+    font-size: 4em;
+    font-family:"Open Sans";
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(2),
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(3) {
+    color: black;
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: "Open Sans";
+}
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(4){
+  font-family: "NanumSquare";
+}
+
+.center-side-text {
+    float: left;
+    display: inline-block;
+    height: 350px;
+    width: 15%;
+    margin-top: 60px;
+    margin-right: 80px;
+    margin-left: 60px;
+    font-family:"NanumSquare";
+    font-size: 1.5em;
+    line-height: 70px;
+}
+
+.left-side-text {
+    display: inline-block;
+    height: 550px;
+    width: auto;
+    font-size: 1.5em;
+    font-family: "NanumSquare";
+    line-height: 65px;
+    margin-top: 60px;
+}
+
+/* Products */
+.products_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  font-weight:300;
+  font-family: "Open Sans";
+}
+.products_wrap>hr{
+  width:10%;
+  border:2px solid #000;
+}
+
+/* Carousel */
+.carousel{
+  width:65%;
+  margin:auto;
+}
+.item>img{
+  width:100%;
+}
+/* Products text */
+.info_text{
+  opacity:0.8;
+  margin:20px;
+  text-align: right;
+  font-family:"NanumSquare";
+}
+
+/* Catering */
+.catering_wrap{
+  background: url("../img/catering-background.png");
+  padding-bottom: 40px;
+}
+.catering_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  font-weight:300;
+  font-family:"Open Sans";
+  color: #fff;
+}
+.catering_wrap>hr{
+  width:10%;
+  border:2px solid #fff;
+}
+.catering_wrap>h3{
+  width:70%;
+  text-align: center;
+  color: #fff;
+  margin:auto;
+  font-size: 2em;
+  font-weight:400;
+  font-family:"NanumSquare";
+  line-height:150%;
+  padding:20px;
+}
+/* Symbol */
+.catering_symbol{
+  width:80%;
+  margin:20px auto;
+}
+.catering_symbol .pour-over{
+  width:30%;
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.catering_symbol .desserts{
+  width:30%;
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+  margin:0 4.9%;
+}
+.catering_symbol .perfomance{
+  width:30%;
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.symbol_img{
+  width:60%;
+  height:180px;
+  margin:20px auto;
+  text-align: center;
+}
+.symbol_img>img{
+  width:80%;
+}
+/* Symbol Text */
+.symbol_title{
+  font-size: 2em;
+  font-family:"NanumSquare";
+  text-align: center;
+  color:#F28322;
+  margin-top: 40px;
+}
+.symbol_text{
+  font-size: 1.5em;
+  font-family:"NanumSquare";
+  text-align: center;
+  padding:10%;
+}
+/* Festival */
+.festival_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  font-family:"Open Sans";
+  padding:20px 0 20px;
+  font-weight:300;
+}
+.festival_intro{
+  width:80%;
+  margin:60px auto;
+}
+.festival_wrap .festival_text{
+  text-align: center;
+  font-family:"NanumSquare";
+}
+.festival_wrap .festival_text>h3{
+  font-size:2.5em;
+  color:#EE4A56;
+  padding:20px;
+}
+.festival_wrap .festival_text>p{
+  font-size:2em;
+}
+.poster_button{
+  text-align: center;
+  font-family:"NanumSquare";
+}
+/* More Posters */
+.poster{
+  display: none;
+}
+.first_post{
+  position: relative;
+  width:80%;
+  margin:40px auto 0;
+}
+.second_post{
+  position: relative;
+  width:80%;
+  margin:20px auto 40px;
+}
+.poster_wrap img{
+  width:100%;
+}
+/* Footer */
+footer{
+  padding-top:40px;
+}
+.footer_img>.col-sm-3{
+  padding:0;
+}
+.footer_img>.col-sm-3>img{
+  width:100%;
+}

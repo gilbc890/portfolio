@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Fashion</title>
+    <title>Gallery</title>
     <meta name="keyword" content="your keyword">
     <meta name="description" content="your description">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="js/mobile.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -21,7 +23,7 @@
             <div class="nav-wrap">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/3go logo.png">
+                        <img src="img/3go logo.png" alt="logo">
                     </a>
                 </div>
 
@@ -65,88 +67,87 @@
         </ul>
     </nav>
 </div>
-<!---------- Section Text Effect ---------->
-    <section class="fashion-page-section">
+<!---------- Scroll Top Button ---------->
+        <a id="scroll-top" href="#">
+            <button>
+                <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+            </button>
+        </a>
+    </nav>
+<!---------- Section Text---------->
+    <section class="gallery-page-section">
         <div class="section-wrap">
             <div class="main-img">
-               <img src="img/main/brand.jpg" alt="fashion image">
+                <img src="img/catering/main.jpg" alt="happying making coffee">
             </div>
-            <div class="fashion-title">
-                <span>패션</span>
-            </div>
-
-            <div class="title-text">
-                <div class="title-text-effect">
-                  쓰리고 패션을 둘러보세요.
+            <div class="text">
+                <div class="title-text">
+                    <h2>Gallery</h2>
+                    <div class="gallery_icon">
+                        <img src="img/gallery/gallery_icon.png" alt="gallery icon">
+                    </div>
                 </div>
+                <div class="text-content">
+                    <p>청춘발전소 문화용광로 말처럼 쓰리고의 케이터링 서비스는 뭔가 허전한 파티나 모임에 활력을 불어 넣어줄 것입니다.</p>
             </div>
-            <div class= first-fashion-content>
-                <span>
-                    쓰리고와 함께하는 상품입니다.
-            </div>
-            <div class= second-fashion-content>
-                <span>
-                    쓰리고의 상품들을 이용해보세요.
-                </span>
-            </div>
-       </div>
+            <div class="circle"></div>
+        </div>
     </section>
 
-<!---------- Article Product ---------->
-    <article class="fashion-page-article">
-        <div class="fashion-product-wrap">
-            <article class="first-line">
-                <div class="product">
-                    <img src="img/brand/fashion/bags/bag3.png" alt="white bag">
-                    <div class="info">
-                        <span class="name">에코백</span>
-                        <span class="price">1.5</span>
-                    </div>
+<!---------- Article Videos ---------->
+    <article class="gallery-page-article">
+        <div class="article-wrap">
+            <div class="video">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/w4H18nUtHcQ">
+                </iframe>
+                <div class="video-explain">
+                    <h2>3Go 케이터링 서비스</h2>
+                    <p>쓰리고의 첫번째 케이터링 서비스</p>
                 </div>
-                <div class="product">
-                    <img src="img/brand/fashion/bags/bag11.png" alt="two bags">
-                    <div class="info">
-                        <span class="name">에코백 둘</span>
-                        <span class="price">2.5</span>
-                    </div>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/SdaSm36w91c">
+                </iframe>
+                <div class="video-explain">
+                    <h2>3Go 케이터링 서비스</h2>
+                    <p>쓰리고의 두번째 케이터링 서비스</p>
                 </div>
-            </article>
-            <article class="second-line">
-                <div class="product">
-                    <img src="img/brand/fashion/caps/beanies.png" alt="beanies">
-                    <div class="info">
-                        <span class="name">비니</span>
-                        <span class="price">1.5</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="img/brand/fashion/caps/four caps.png" alt="caps">
-                    <div class="info">
-                        <span class="name">모자</span>
-                        <span class="price">1.5</span>
-                    </div>
-                </div>
-            </article>
-            <article class="third-line">
-                <div class="product">
-                    <img src="img/brand/fashion/t-shirts/t-shirts.png" alt="black t-shrits">
-                    <div class="info">
-                        <span class="name">티셔츠</span>
-                        <span class="price">1.5</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="img/brand/fashion/t-shirts/t-shirts.png" alt="t-shirts">
-                    <div class="info">
-                        <span class="name">티셔츠</span>
-                        <span class="price">1.5</span>
-                    </div>
-                </div>
-            </article>
+            </div>
         </div>
     </article>
+<!---------- Article Photoes ---------->
+    <article class="gallery-page-second-article">
+            <div class="article-wrap">
+                <div class="photo-gallery">
+                    <div class="photo-gallery-explain">
+                        <h2>PHOTO</h2>
+                        <hr>
+                        <p>쓰리고의 활동들을 둘러보세요</p>
+                    </div>
+                    <div class="photo-gallery-photos">
+                        <div class="first-line">
+                            <img src="img/gallery/vans_cookie.jpg" alt="vans cookie">
+                            <img src="img/gallery/vans_coffee.jpg" alt="vans coffee">
+                            <img src="img/gallery/package_coffee.jpg" alt="packgage coffee">
+                        </div>
+                        <div class="second-line">
+                            <img src="img/gallery/package_coffee2.jpg" alt="package coffee">
+                            <img src="img/gallery/vans_barista.jpg" alt="barista">
+                            <img src="img/gallery/renegade.jpg" alt="catering event">
+                        </div>
+                        <div class="third-line">
+                            <img src="img/gallery/lunch.jpg" alt="lunch event">
+                            <img src="img/gallery/makeawish.jpg" alt="makeawish office">
+                            <img src="img/gallery/makeawish2.jpg" alt="makeawish office2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </article>
 
-  <!---------- Footer ---------->
+
+
+    <!---------- Footer ---------->
         <footer>
 
           <!-- Footer Accordion -->
@@ -163,14 +164,13 @@
                           <li class="accordion__list">
                               <div class="footer-link"><span class="link__title"><p>SNS</p></span><i class="fa fa-chevron-down"></i></div>
                               <ul class="footer-submenu">
-                                  <li><a href="#"><img src="img/instagram.png" alt="instagram"> 3go insta</a></li>
-                                  <li><a href="#"><img src="img/fb.png" alt="facebook"> 3go facebook</a></li>
-                                  <li><a href="#"><img src="img/kakaotalk.png" alt="kakaotalk"> 3go kakaotalk</a></li>
-                              </ul>
+                                <li><a href="https://www.instagram.com/3gocafe/"><img src="img/instagram.png" alt="instagram"> 3Go Instagram</a></li>
+                                <li><a href="https://www.facebook.com/3gocafe/"><img src="img/fb.png" alt="facebook"> 3Go Facebook</a></li>
+                                <li><a href="https://open.kakao.com/o/shA0mOK/"><img src="img/kakaotalk.png" alt="kakaotalk"> 3Go Kakaotalk</a></li>
+                            </ul>
                           </li>
                       </ul>
                   </div>
-
 
     <!-- Footer Bar -->
             <div class="footer-bar">
